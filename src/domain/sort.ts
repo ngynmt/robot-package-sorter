@@ -38,7 +38,7 @@ function isValidInput(measurements: number[]): boolean {
 }
 
 /**
-* Returns whether package is bulky (dimensions >= 1m sqcm or any one dimension >= 150cm)
+* Returns whether package is bulky (dimensions >= 1m cm^3 or any one dimension >= 150cm)
 */
 function isBulky(width: number, height: number, length: number): boolean {
   return width * height * length >= 1000000 || width >= 150 || height >= 150 || length >= 150;
